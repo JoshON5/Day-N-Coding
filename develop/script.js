@@ -8,6 +8,7 @@ $(function () {
 
   $(document).ready(function () {
     $(".saveBtn").on("click", function () {
+        
       var text = $(this).siblings(".description").val();
       var time = $(this).parent().attr("id");
 
@@ -36,7 +37,8 @@ $(function () {
       });
     }
 
-    $("#hour9 .description").val(localStorage.getItem("hour9"));
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+
     timeTracker();
   });
 });
